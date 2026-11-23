@@ -1,0 +1,11 @@
+# Microservices adaptes au projet local
+
+Source : micro-services-app-main(2).zip fourni par l’utilisateur.
+
+Adaptations : Java 21 conserve, Spring Boot 3.5.16 et Spring Cloud 2025.0.3, customer-service sous org.sid.customerservice (au lieu de net.youssfi.customerservice), dependance Gateway reactive actualisee, Config Server en mode native avec les fichiers config-repo inclus, parametres H2 locaux de secours.
+
+Le code metier du professeur est conserve autant que possible. Aucune compilation de cet ensemble adapte n’a ete verifiee dans cet environnement.
+
+Ouvrir chaque dossier de service comme projet Maven dans IntelliJ. Demarrer discovery-service, config-service, customer-service, inventory-service, gatewey-service puis billing-service.
+
+Attention : ne pas copier tous les services dans src/main/java du customer-service ; chaque service a son propre pom.xml.
